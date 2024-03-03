@@ -1,6 +1,8 @@
 # TranslationService
 沉浸式翻译本地大模型临时解决方案
 
+## 0. 打开沉浸式翻译的实验功能,使用自定义API,使用自定义地址:`http://localhost:8080/translate`
+
 ## 1. 直接使用命令行
 从源码编译后直接在命令行使用`/path/to/TranslationService`,或者从仓库的release下载编译后的二进制文件
 
