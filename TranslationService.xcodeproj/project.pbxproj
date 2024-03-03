@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D7E5EBE2B9363A30061BE6A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E5EBD2B9363A30061BE6A /* main.swift */; };
+		7D7E5EC62B9366150061BE6A /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7E5EC52B9366150061BE6A /* Swifter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7E5EC62B9366150061BE6A /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = TranslationService;
+			packageProductDependencies = (
+				7D7E5EC52B9366150061BE6A /* Swifter */,
+			);
 			productName = TranslationService;
 			productReference = 7D7E5EBA2B9363A30061BE6A /* TranslationService */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = 7D7E5EB12B9363A30061BE6A;
+			packageReferences = (
+				7D7E5EC42B9366150061BE6A /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = 7D7E5EBB2B9363A30061BE6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,6 +297,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D7E5EC42B9366150061BE6A /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				branch = stable;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D7E5EC52B9366150061BE6A /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D7E5EC42B9366150061BE6A /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D7E5EB22B9363A30061BE6A /* Project object */;
 }
